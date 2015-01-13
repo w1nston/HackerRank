@@ -13,9 +13,9 @@ The next line contains *n* integers, each ranging between 1 and 2000 (inclusive)
 
 ### Constraints
 
-1 ≤ **T** ≤ 10 
-1 ≤ *n* ≤ 2000 
-1 ≤ *k* ≤ 2000
+1 ≤ **T** ≤ 10 <br/>
+1 ≤ *n* ≤ 2000 <br/>
+1 ≤ *k* ≤ 2000 <br/>
 
 ### Output Format
 
