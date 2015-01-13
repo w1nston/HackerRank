@@ -28,9 +28,9 @@ Print every partitioned sub-array on a new line.
 
 ### Constraints
 
-1<=n<=1000 
--1000<=x<= 1000 , x ∈ ar 
-There are no duplicate numbers.
+1<=n<=1000 <br/>
+-1000<=x<= 1000 , x ∈ ar <br/>
+There are no duplicate numbers. <br/>
 
 ### Sample Input
 

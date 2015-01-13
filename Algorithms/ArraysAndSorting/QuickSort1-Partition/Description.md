@@ -30,9 +30,9 @@ Print out the numbers of the partitioned array on one line.
 
 ### Constraints
 
-1<=n<=1000 
--1000<=x<= 1000 , x ∈ ar 
-All elements will be distinct
+1<=n<=1000 <br/>
+-1000<=x<= 1000 , x ∈ ar <br/>
+All elements will be distinct <br/>
 
 ### Sample Input
 
