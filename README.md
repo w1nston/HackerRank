@@ -13,3 +13,4 @@ This repository consists of proposed solutions to challenges posted at [HackerRa
     * [Knapsack](https://github.com/w1nston/HackerRank/blob/master/Algorithms/DynamicProgramming/Knapsack/Solution.java)
   * Strings
     * [Common Child](https://github.com/w1nston/HackerRank/blob/master/Algorithms/Strings/CommonChild/Solution.java)
+    * [Anagram](https://github.com/w1nston/HackerRank/blob/master/Algorithms/Strings/Anagram/Solution.java)
