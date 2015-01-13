@@ -100,18 +100,6 @@ public class Solution {
 	}
 	
 	/**
-	 * Helper method to print an integer array.
-	 *
-	 * @param array - The array to print.
-	 */
-	private void print(int[] array) {
-		for (int element : array) {
-			print(element);
-		}
-		System.out.println("");
-	}
-	
-	/**
 	 * Helper method to print part of an integer array.
 	 *
 	 * @param array - The array to print.

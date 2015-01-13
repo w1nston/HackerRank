@@ -18,7 +18,9 @@ public class Solution {
 			array[index++] = scanner.nextInt();
 		}
 		// Partition the array
-		solution.partition(array);
+		solution.partition(array, 0, array.length);
+		// Print the partition
+		solution.print(array, 0, array.length);
 	}
 	
 	/**
@@ -31,19 +33,21 @@ public class Solution {
 	 *
 	 * Finally the new order is printed.
 	 *
-	 * @param array - The array to partition
+	 * @param array - The array to partition.
+	 * @param left - A pointer to the beginning of the sub-array.
+	 * @param right - A pointer to the end of the sub-array.
 	 */
-	public void partition(int[] array) {
-		// First select the pivot element
-		int pivot = chosePivot(array);
+	public int partition(int[] array, int left, int right) {
+		// The pivot is the first element of the sub-array,
+		// which is given by the pointer "left"
+		int pivot = array[left];
 		// Create a List to keep elements smaller than the pivot
 		List<Integer> smaller = new ArrayList<Integer>(array.length);
 		// Create a list to keep elements larger than the pivot
 		List<Integer> larger = new ArrayList<Integer>(array.length);
-		// Iterate through the list and place the elements in the
-		// proper list, and we know the first element is the pivot
-		// so start from the second element
-		for (int i = 1; i < array.length; ++i) {
+		// Iterate through the subarray and place the elements,
+		// starting from the second element of the sub-array
+		for (int i = left + 1; i < right; ++i) {
 			// If the element is smaller than the pivot
 			if (array[i] < pivot) {
 				// place it in the smaller list
@@ -52,29 +56,36 @@ public class Solution {
 				larger.add(array[i]); // which means if we have an element equal or larger than the pivot..
 			}
 		}
-		// Print the smaller elements first
-		for (int element : smaller) {
-			print(element);
+		// Update the array with the smaller elements to the left
+		for (int i = 0; i < smaller.size(); ++i) {
+			// Update the i'th element from the offset:
+			// start index
+			array[left + i] = smaller.get(i);
 		}
-		// Then print the pivot element
-		print(pivot);
-		// Last print all larger elements
-		for (int element : larger) {
-			print(element);
+		// Update the placement of the pivot
+		array[left + smaller.size()] = pivot;
+		// Update the array with the larger elements
+		for (int i = 0; i < larger.size(); ++i) {
+			// Update the i'th element from the offset:
+			// start index + all elements smaller + the pivot
+			array[left + smaller.size() + 1 + i] = larger.get(i);
 		}
-		// And end it off with a new line...
-		System.out.println("");
+		// Return the new index of our pivot
+		return left + smaller.size();
 	}
 	
 	/**
-	 * Returns the first element of the array according to
-	 * the specification of this challenge.
+	 * Helper method to print part of an integer array.
 	 *
-	 * @param array - The array to chose a pivot element from.
-	 * @return A pivot element to partition the array according to.
+	 * @param array - The array to print.
+	 * @param left - The start pointer to where to start printing from.
+	 * @param right - The end pointer to where to stop printing from.
 	 */
-	private int chosePivot(int[] array) {
-		return array[0];
+	public void print(int[] array, int left, int right) {
+		for (int i = left; i < right; ++i) {
+			print(array[i]);
+		}
+		System.out.println("");
 	}
 	
 	/**
