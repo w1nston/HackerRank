@@ -2,7 +2,7 @@
 
 This repository consists of proposed solutions to challenges posted at [HackerRank](www.hackerrank.com).
 
-## Sections answered
+## Sections with answers
 
 * **Algorithms**
   * Arrays and Sorting
@@ -11,3 +11,5 @@ This repository consists of proposed solutions to challenges posted at [HackerRa
   * Dynamic Programming
     * [The Maximum Subarray](https://github.com/w1nston/HackerRank/blob/master/Algorithms/DynamicProgramming/TheMaximumSubarray/Solution.java)
     * [Knapsack](https://github.com/w1nston/HackerRank/blob/master/Algorithms/DynamicProgramming/Knapsack/Solution.java)
+  * Strings
+    * [Common Child](https://github.com/w1nston/HackerRank/blob/master/Algorithms/Strings/CommonChild/Solution.java)
