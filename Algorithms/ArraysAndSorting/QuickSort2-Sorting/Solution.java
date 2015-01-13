@@ -61,6 +61,7 @@ public class Solution {
 	 * @param array - The array to partition.
 	 * @param left - A pointer to the beginning of the sub-array.
 	 * @param right - A pointer to the end of the sub-array.
+	 * @return The new index of the pivot element.
 	 */
 	public int partition(int[] array, int left, int right) {
 		// The pivot is the first element of the sub-array,
