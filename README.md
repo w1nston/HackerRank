@@ -11,6 +11,8 @@ This repository consists of proposed solutions to challenges posted at [HackerRa
   * Dynamic Programming
     * [The Maximum Subarray](https://github.com/w1nston/HackerRank/blob/master/Algorithms/DynamicProgramming/TheMaximumSubarray/Solution.java)
     * [Knapsack](https://github.com/w1nston/HackerRank/blob/master/Algorithms/DynamicProgramming/Knapsack/Solution.java)
+  * Graph Theory
+    * [A journey to the moon](https://github.com/w1nston/HackerRank/blob/master/Algorithms/GraphTheory/JourneyToTheMoon/Solution.java)
   * Strings
     * [Common Child](https://github.com/w1nston/HackerRank/blob/master/Algorithms/Strings/CommonChild/Solution.java)
     * [Anagram](https://github.com/w1nston/HackerRank/blob/master/Algorithms/Strings/Anagram/Solution.java)
