@@ -1,6 +1,6 @@
 # Solutions to HackerRank challenges
 
-This repository consists of proposed solutions to challenges posted at [HackerRank](www.hackerrank.com).
+This repository consists of proposed solutions to challenges posted at www.hackerrank.com.
 
 ## Sections with answers
 
