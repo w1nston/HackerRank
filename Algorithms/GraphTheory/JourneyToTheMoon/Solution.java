@@ -37,17 +37,10 @@ public class Solution {
 			// Add a new edge to the graph
 			solution.addEdge(graph, a, b);
 		}
-		// Create an array to keep track of what vertices (what astronauts) are visited
-		boolean[] isVisited = new boolean[nrOfAstronauts];
-		// Initialize all vertices to be not visited
-		for (int i = 0; i < isVisited.length; ++i) {
-			isVisited[i] = false;
-		}
-		// Perform a depth first search to calculate how many connected components
-		// (how many countries) there are in the graph
-		long nrOfCountries = solution.dfs(graph);
-		// Print the answer
-		System.out.println(Long.toString(nrOfCountries));
+		// Perform a depth first search to find how many connected components
+		// there are, calculate the amount of combinations there are to 
+		// select two astronauts from different countries, and print the answer
+		System.out.println(Long.toString(solution.dfs(graph)));
 	}
 	
 	
